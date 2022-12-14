@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://henry-manage-landing-page.netlify.app/](https://your-live-site-url.com)
+- Live Site URL: [https://ray-dev67.github.io/MANAGE-LANDING-PAGE/](https://your-live-site-url.com)
 
 ## My process
 

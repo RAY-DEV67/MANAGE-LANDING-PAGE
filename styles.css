@@ -86,3 +86,6 @@ button:hover{
     background-color: hsl(233, 12%, 13%);
     font-weight: 500;
 }
+.try1{
+    background-position-x: 100rem;
+}

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link href="styles.css" rel="stylesheet"/> -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Manage landing page</title>
+  </head>
+  <body class="relative">
+    <div class="head relative">
+      <img
+        src="images/bg-tablet-pattern.svg"
+        alt="bg"
+        class="absolute bgimg -top-10 left-full md:-top-36"
+      />
+      <div class="flex justify-between items-center p-8">
+        <img src="images/logo.svg" alt="manage" />
+        <img src="images/icon-hamburger.svg" alt="hambuger" class="md:hidden ham cursor-pointer" />
+        <div class="md:flex flex-row hidden">
+          <p class="nav cursor-pointer">Pricing</p>
+          <p class="mx-4 nav cursor-pointer">Product</p>
+          <p class="nav cursor-pointer">About Us</p>
+          <p class="mx-4 nav cursor-pointer">Careers</p>
+          <p class="nav cursor-pointer">Community</p>
+        </div>
+        <button class="px-8 rounded-full py-2 button hidden md:block">
+          Get Started
+        </button>
+      </div>
+    </div>
+    <div class="flex flex-col md:items-center">
+      <div class="relative md:w-11/12 flex flex-col md:flex-row-reverse">
+        <div class="md:w-11/12 md:ml-32 md:flex md:flex-col md:items-end">
+          <img
+            src="images/illustration-intro.svg"
+            alt="illustration"
+            class="w-full md:-mr-6"
+          />
+        </div>
+        <div
+          class="flex flex-col items-center md:w-2/3 md:pt-24 md:items-start"
+        >
+          <div
+            class="w-11/12 text-center flex flex-col md:items-start items-center md:text-left"
+          >
+            <h1 class="text-4xl w-10/12 md:w-full md:text-5xl">
+              Bring everyone together to build better products.
+            </h1>
+            <p class="w-10/12 mt-4 md:mt-8 md:w-full">
+              Manage makes it simple for software teams to plan day-to-day tasks
+              while keeping the larger team goals in view.
+            </p>
+          </div>
+          <div class="md:flex md:w-full md:flex-col md:items-start">
+            <div class="md:w-11/12">
+              <button class="mt-4 md:mt-8 px-8 rounded-full py-2 button">
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+        <img
+          src="images/bg-tablet-pattern.svg"
+          alt="bg"
+          class="absolute bgimg2 top-64 left-full md:-left-96 md:top-full"
+        />
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row">
+      <div class="flex flex-col items-center">
+        <div class="w-11/12 text-center flex mt-16 flex-col items-center">
+          <h1 class="text-2xl w-8/12">What’s different about Manage?</h1>
+          <p class="w-10/12 mt-4">
+            Manage provides all the functionality your team needs, without the
+            complexity. Our software is tailor-made for modern digital product
+            teams.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-12">
+        <div class="flex flex-col items-end">
+          <div class="flex items-center manage w-11/12 md:bg-white">
+            <p class="border px-6 rounded-full py-2 mr-2 button">01</p>
+            <p class="managehead">Track company-wide progress</p>
+          </div>
+        </div>
+        <div class="flex flex-col items-center">
+          <p class="mt-4 w-10/12">
+            See how your day-to-day tasks fit into the wider vision. Go from
+            tracking progress at the milestone level all the way done to the
+            smallest of details. Never lose sight of the bigger picture again.
+          </p>
+        </div>
+
+        <div class="flex flex-col items-end mt-4">
+          <div class="flex items-center manage w-11/12 md:bg-white">
+            <p class="border px-6 rounded-full py-2 button mr-2">02</p>
+            <p class="managehead">Advanced built-in reports</p>
+          </div>
+        </div>
+        <div class="flex flex-col items-center">
+          <p class="mt-4 w-10/12">
+            Set internal delivery estimates and track progress toward company
+            goals. Our customisable dashboard helps you build out the reports
+            you need to keep key stakeholders informed.
+          </p>
+        </div>
+
+        <div class="flex flex-col items-end mt-4">
+          <div class="flex items-center manage w-11/12 md:bg-white">
+            <p class="border px-6 rounded-full py-2 button mr-2">03</p>
+            <p class="managehead">Everything you need in one place</p>
+          </div>
+        </div>
+        <div class="flex flex-col items-center">
+          <p class="mt-4 w-10/12">
+            Stop jumping from one service to another to communicate, store
+            files, track tasks and share documents. Manage offers an all-in-one
+            team productivity solution.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12 text-center">
+      <h2 class="text-2xl md:text-4xl">What they’ve said</h2>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="flex flex-col items-center">
+              <div
+                class="w-10/12 testimonial p-4 mt-12 md:mt-24 relative cursor-pointer"
+              >
+                <img
+                  src="images/avatar-anisha.png"
+                  class="anisha img absolute -top-10 left-1/2 w-16"
+                  alt="anisha"
+                />
+                <div class="mt-8 mb-8">
+                  <h3 class="managehead">Anisha Li</h3>
+                  <div class="flex flex-col items-center mt-4">
+                    <p class="w-11/12 max-w-sm">
+                      “Manage has supercharged our team’s workflow. The ability
+                      to maintain visibility on larger milestones at all times
+                      keeps everyone motivated.”
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex flex-col items-center">
+              <div
+                class="w-10/12 testimonial p-4 mt-12 md:mt-24 relative cursor-pointer"
+              >
+                <img
+                  src="images/avatar-ali.png"
+                  class="anisha img absolute -top-10 left-1/2 w-16"
+                  alt="anisha"
+                />
+                <div class="mt-8 mb-8">
+                  <h3 class="managehead">Ali Bravo</h3>
+                  <div class="flex flex-col items-center mt-4">
+                    <p class="w-11/12 max-w-sm">
+                      “We have been able to cancel so many other subscriptions
+                      since using Manage. There is no more cross-channel
+                      confusion and everyone is much more focused.”
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex flex-col items-center">
+              <div
+                class="w-10/12 testimonial p-4 mt-12 md:mt-24 relative cursor-pointer"
+              >
+                <img
+                  src="images/avatar-richard.png"
+                  class="anisha img absolute -top-10 left-1/2 w-16"
+                  alt="anisha"
+                />
+                <div class="mt-8 mb-8">
+                  <h3 class="managehead">Richard Watts</h3>
+                  <div class="flex flex-col items-center mt-4">
+                    <p class="w-11/12 max-w-sm">
+                      “Manage allows us to provide structure and process. It
+                      keeps us organized and focused. I can’t stop recommending
+                      them to everyone I talk to!”
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="flex flex-col items-center">
+              <div
+                class="w-10/12 testimonial p-4 mt-12 md:mt-24 relative cursor-pointer"
+              >
+                <img
+                  src="images/avatar-shanai.png"
+                  class="anisha img absolute -top-10 left-1/2 w-16"
+                  alt="anisha"
+                />
+                <div class="mt-8 mb-8">
+                  <h3 class="managehead">Shanai Gough</h3>
+                  <div class="flex flex-col items-center mt-4">
+                    <p class="w-11/12 max-w-sm">
+                      “Their software allows us to track, manage and collaborate
+                      on our projects from anywhere. It keeps the whole team
+                      in-sync without being intrusive.”
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+      <button class="mt-4 md:mt-8 px-8 rounded-full py-2 button">
+        Get Started
+      </button>
+    </div>
+
+    <div
+      class="flex flex-col items-center mt-8 md:mt-64 button bg-no-repeat bg-[url('/images/bg-simplify-section-mobile.svg')] md:bg-[url('/images/bg-simplify-section-desktop.svg')] py-24"
+    >
+      <div
+        class="w-9/12 text-center flex flex-col md:flex-row md:items-center md:justify-between"
+      >
+        <h2 class="text-5xl simplify max-w-sm">
+          Simplify how your team works today
+        </h2>
+        <button class="mt-8 px-8 rounded-full py-2 start">
+          Get Started
+        </button>
+      </div>
+    </div>
+
+    <div class="text-center footer">
+      <div class="flex flex-col md:flex-row-reverse md:justify-around w-full">
+        <div class="flex flex-col items-center">
+          <div class="flex flex-col items-start w-11/12">
+            <div class="flex flex-row items-start w-full justify-center pt-8">
+              <div class="mr-4 w-full">
+                <input
+                  type="email"
+                  placeholder="Updates in your inbox..."
+                  class=" rounded-full py-2 pl-4 mr-4 w-full input"
+                />
+                <p class="text-red-500 error hidden">
+                  Please insert a valid email
+                </p>
+              </div>
+              <button class=" px-8 rounded-full py-2 submit button go">
+                Go
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="flex flex-row justify-around w-10/12">
+            <div class="mt-12 md:mt-8">
+              <p class="cursor-pointer foot">Home</p>
+              <p class="my-4 cursor-pointer foot">Pricing</p>
+              <p class="cursor-pointer foot">Products</p>
+              <p class="mt-4 cursor-pointer foot">About</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div class="flex flex-row justify-around w-10/12">
+            <div class="mt-12 md:mt-8">
+              <p class="cursor-pointer foot">Careers</p>
+              <p class="my-4 cursor-pointer foot">Community</p>
+              <p class="cursor-pointer foot">Privacy</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col items-center md:flex-col-reverse md:justify-end"
+        >
+          <div class="flex flex-row justify-center mt-8 w-10/12">
+            <img src="images/icon-facebook.svg" alt="facebook" class="w-12" />
+            <img
+              src="images/icon-youtube.svg"
+              alt="youtube"
+              class="mx-8 w-12"
+            />
+            <img src="images/icon-twitter.svg" alt="twitter" class="w-12" />
+            <img
+              src="images/icon-pinterest.svg"
+              alt="pinterest"
+              class="mx-8 w-12"
+            />
+            <img src="images/icon-instagram.svg" alt="instagram" class="w-12" />
+          </div>
+          <div class="mt-12 md:mt-8 flex flex-col items-center">
+            <img src="images/logo.svg" alt="logo" />
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 md:mt-12 flex flex-col items-center">
+        <p>Go Copyright 2020. All Rights Reserved</p>
+      </div>
+    </div>
+
+    <div>
+      <img src="images/icon-close.svg" alt="close" class="absolute top-8 hidden cursor-pointer z-3888 left-full close">
+    </div>
+
+    <div class="flex flex-col items-center hidden mobilenav">
+      <div
+        class="md:flex flex-row  text-center mobilenav absolute top-0 left-0 pt-24 w-full"
+      >
+        <div class="flex flex-col items-center">
+          <div class="bg-white w-11/12 rounded">
+            <p class="pt-8 nav cursor-pointer">Pricing</p>
+          <p class="my-4 nav cursor-pointer">Product</p>
+          <p class="nav cursor-pointer">About Us</p>
+          <p class="my-4 nav cursor-pointer">Careers</p>
+          <p class="pb-8 nav cursor-pointer">Community</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const email = document.querySelector(".input");
+      const validation = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+      const invalid = document.querySelector(".error");
+      const submit = document.querySelector(".submit");
+
+      submit.addEventListener("click", function (e) {
+        e.preventDefault();
+        if (email.value.match(validation)) {
+          email.style.border = "none";
+          invalid.style.display = "none";
+          console.log(email.value);
+        } else {
+          // ERROR MESSAGE
+          email.style.border = "1px solid red";
+          invalid.style.display = "block";
+        }
+      });
+
+      // MOBILE NAV/////////////////////////////
+      function handleNavOpen() {
+        $(".mobilenav").show()
+        $("body").css("overflow-y", "hidden")
+        $(".close").show()
+        $(".ham").hide()
+      }
+
+      function handleNavClose() {
+        console.log("close");
+        $(".mobilenav").hide()
+        $("body").css("overflow-y", "scroll")
+        $(".close").hide()
+        $(".ham").show()
+      }
+
+document.querySelector(".ham").addEventListener("click",function(e){
+  handleNavOpen()
+})
+
+document.querySelector(".mobilenav").addEventListener("click",function(e){
+  handleNavClose()
+})
+
+      const swiper = new Swiper(".swiper", {
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
+  </body>
+</html>

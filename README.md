@@ -1,14 +1,13 @@
-# Manage landing page solution
-
+#  Manage landing page 
 
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
-
 
 ## Overview
 
@@ -23,10 +22,9 @@ Users should be able to:
   - The `input` field is empty
   - The email address is not formatted correctly
 
+### Screenshot
 
-### Links
-
-- Live Site URL: [https://henry-manage-landing-page.netlify.app/](https://your-live-site-url.com)
+![](./manage.png)
 
 ## My process
 
@@ -34,11 +32,11 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
+- CSS Grid
 - Mobile-first workflow
-- [Tailwind](https://nextjs.org/) - CSS framework
-
+- Tailwind
+- Jquery
 
 ## Author
 
-- [Henry Elebor](https://www.your-site.com)
+- [Henry Elebor]
